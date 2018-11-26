@@ -1,0 +1,18 @@
+Instalar as dependências:
+
+	sudo apt-get update
+	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+	sudo dpkg -i google-chrome-stable_current_amd64.deb
+	sudo apt-get install bundler
+	sudo apt-get install ruby
+	sudo apt-get install ruby-dev
+	sudo apt-get install docker
+
+	-Acessar a pasta do projeto
+		sudo apt-get install libxml2 libxml2-dev libxslt1-dev
+		sudo gem install nokogiri
+		bundle install
+
+Executar o teste de aceitação automatizado:
+	bundle exec rake run_test[td,"-t find_book"]
+
